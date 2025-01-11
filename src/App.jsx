@@ -17,7 +17,7 @@ function App() {
     const lowerCaseCity = city.toLowerCase()
     setShowCity(lowerCaseCity)
     console.log(showCity)
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=8e55a7cb38844dd797603122242812&q=${lowerCaseCity}&aqi=yes`
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=8e55a7cb38844dd797603122242812&q=${lowerCaseCity}&aqi=yes`
     console.log(apiUrl)
     axios.get(apiUrl).then(response => {
       const data = response.data
